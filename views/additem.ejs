@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ล็อตเตอรี่ไทยแลนด์ ADD NUMBER </title>
+    <link href="additem.css" rel="stylesheet">
+</head>
+<body>
+
+    <h1>ADD NUMBER</h1>
+    <% if(typeof mesg != "undefined") { %>
+    <h1><%= mesg %></h1>
+    <% } %>>
+    <a href="http://localhost:5000/">หน้าแรก</a>
+    <a href="/additem">additem</a>
+    <a href="/delete">delete</a>
+    <form action="/additem" method="post">
+        <div>
+            <label>id</label>
+            <input type="text" name="id" id="id">
+        </div>
+        <div>
+            <label>Category</label>
+            <input type="text" name="Category" id="Category">
+        </div>
+        <div>
+            <label>Draw</label>
+            <input type="text" name="Draw" id="Draw">
+        </div>
+        <div>
+            <label>Prize</label>
+            <input type="text" name="Prize" id="Prize">
+        </div>
+        <div>
+            <label>Date</label>
+            <input type="date" name="date" id="date">
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
